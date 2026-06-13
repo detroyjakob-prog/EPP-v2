@@ -1,0 +1,9 @@
+# Simple quiz test
+show window "Test Quiz"
+
+question "What is 1+1?" choices "2", "3", "4"
+question "What is 2+2?" choices "3", "4", "5"
+
+end quiz
+
+run window

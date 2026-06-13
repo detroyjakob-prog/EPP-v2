@@ -1,0 +1,55 @@
+{
+  "name": "epp-lang",
+  "displayName": "E++ Language Support",
+  "description": "Syntax highlighting, snippets and intellisense for E++ programming language",
+  "version": "1.0.0",
+  "publisher": "epp-lang",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/epp-lang/epp-vscode"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": ["Programming Languages"],
+  "icon": "images/icon.png",
+  "activationEvents": ["onLanguage:epp"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [{
+      "id": "epp",
+      "aliases": ["E++", "epp"],
+      "extensions": [".epp"],
+      "scopeName": "source.epp"
+    }],
+    "grammars": [{
+      "language": "epp",
+      "scopeName": "source.epp",
+      "path": "./syntaxes/epp.tmLanguage.json"
+    }],
+    "snippets": [{
+      "language": "epp",
+      "path": "./snippets/snippets.json"
+    }],
+    "themes": [{
+      "label": "E++ Dark",
+      "uiTheme": "vs-dark",
+      "path": "./themes/epp-dark.json"
+    }]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext .ts",
+    "epp": "py epp.py"
+  },
+  "devDependencies": {
+    "@types/node": "16.x",
+    "@types/vscode": "^1.75.0",
+    "@vscode/test-electron": "^2.1.5",
+    "typescript": "^4.9.5"
+  }
+}

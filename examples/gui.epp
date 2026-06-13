@@ -1,0 +1,8 @@
+# General Game template in E++
+game window "Lol"
+
+create object rect as player at 400 300 size 30 20
+set color player to "cyan"
+create object circle as enemy1 at 100 50 size 20 20
+
+game loop

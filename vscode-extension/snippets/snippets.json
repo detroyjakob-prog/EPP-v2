@@ -1,0 +1,92 @@
+{
+  "Print Statement": {
+    "prefix": "say",
+    "body": ["say ${1:\"message\"}"],
+    "description": "Print output to console"
+  },
+  "Variable Declaration": {
+    "prefix": "let",
+    "body": ["let ${1:name} be ${2:value}"],
+    "description": "Declare a variable"
+  },
+  "If Statement": {
+    "prefix": "if",
+    "body": [
+      "if ${1:condition}",
+      "    ${2:say \"true\"}",
+      "end if"
+    ],
+    "description": "If condition block"
+  },
+  "Repeat Loop": {
+    "prefix": "repeat",
+    "body": [
+      "repeat ${1:5} times",
+      "    ${2:say \"Hello\"}",
+      "end repeat"
+    ],
+    "description": "Repeat loop"
+  },
+  "GUI - Window": {
+    "prefix": "window",
+    "body": [
+      "show window \"${1:My App}\"",
+      "",
+      "add label \"${2:Welcome!}\"",
+      "",
+      "run window"
+    ],
+    "description": "Create GUI window"
+  },
+  "GUI - Quiz": {
+    "prefix": "quiz",
+    "body": [
+      "show window \"${1:Quiz}\"",
+      "",
+      "question \"${2:Q1?}\" choices \"${3:A}\", \"${4:B}\", \"${5:C}\"",
+      "",
+      "end quiz",
+      "",
+      "run window"
+    ],
+    "description": "Create quiz"
+  },
+  "Game - Template": {
+    "prefix": "game",
+    "body": [
+      "game window \"${1:My Game}\"",
+      "",
+      "create object rect as player at ${2:400} ${3:300} size ${4:30} ${5:20}",
+      "set color player to \"cyan\"",
+      "",
+      "create object circle as enemy1 at ${6:100} ${7:50} size ${8:20} ${9:20}",
+      "set color enemy1 to \"red\"",
+      "",
+      "when key \"Left\" do move player left by ${10:10}",
+      "when key \"Right\" do move player right by ${11:10}",
+      "",
+      "game loop"
+    ],
+    "description": "Create a game template"
+  },
+  "Game - Object": {
+    "prefix": "obj",
+    "body": ["create object ${1:(rect|circle)} as ${2:name} at ${3:x} ${4:y} size ${5:w} ${6:h}"],
+    "description": "Create game object"
+  },
+  "Game - Move": {
+    "prefix": "move",
+    "body": ["move ${1:object} ${2:(left|right|up|down)} by ${3:amount}"],
+    "description": "Move game object"
+  },
+  "Game - Color": {
+    "prefix": "color",
+    "body": ["set color ${1:object} to \"${2:color}\""],
+    "description": "Set object color"
+  },
+  "Game - Key": {
+    "prefix": "key",
+    "body": ["when key \"${1:key}\" do ${2:action}"],
+    "description": "Bind key to action"
+  }
+}

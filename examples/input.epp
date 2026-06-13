@@ -1,0 +1,2 @@
+ask "What is your name?" as question
+say "Hello, " + question

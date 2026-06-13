@@ -1,0 +1,54 @@
+# Welcome to E++
+# This is a sample program
+
+# Print statements
+say "Hello, World!"
+print "Welcome to E++"
+
+# Variables
+let name be "Alice"
+let age be 25
+let x be 5 + 3
+let y be x * 2
+
+# Using variables
+say "Name: " + name
+say "Age: " + age
+say "x = " + x
+say "y = " + y
+
+# Conditions
+if age is 25
+    say "Correct age!"
+end if
+
+if age is not 20
+    say "Age is different from 20"
+end if
+
+if age greater than 18
+    say "You are an adult"
+end if
+
+if age less than 30
+    say "You are young"
+end if
+
+# Loops
+say "Counting to 5:"
+repeat 5 times
+    say "Hello"
+end repeat
+
+# Calculator example
+let a be 10
+let b be 20
+let sum be a + b
+say "Sum: " + sum
+
+if sum is not 30
+    say "Sum is not 30"
+end if
+if sum is 30
+    say "Sum is 30"
+end if

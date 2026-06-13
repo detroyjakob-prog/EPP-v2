@@ -1,0 +1,40 @@
+# ============================================
+# E++ Language - C# Level English Syntax
+# ============================================
+
+say "=== Variables & Math ==="
+
+let x be 10
+let y be 5
+let sum be x + y
+say "Sum: " + sum
+
+let root be sqrt(16)
+say "Square root of 16: " + root
+
+say ""
+say "=== Loops ==="
+
+let counter be 0
+while counter less than 3
+    say "While: " + counter
+    counter += 1
+end while
+
+say ""
+say "=== For Loop ==="
+for i from 1 to 3
+    say "For i = " + i
+end for
+
+say ""
+say "=== Lists ==="
+list numbers
+add to numbers 1
+add to numbers 2
+say "List length: " + length of numbers
+
+say ""
+say "=== Random ==="
+random dice from 1 to 6
+say "Dice roll: " + dice

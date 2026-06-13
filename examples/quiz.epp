@@ -1,0 +1,12 @@
+# Quiz Example - General Knowledge
+
+show window "General Knowledge Quiz"
+
+question "What is the capital of France?" choices "London", "Paris", "Berlin", "Madrid"
+question "Which planet is known as the Red Planet?" choices "Venus", "Jupiter", "Mars", "Saturn"
+question "What is 2 + 2?" choices "3", "4", "5", "6"
+question "Who wrote Romeo and Juliet?" choices "Dickens", "Shakespeare", "Austen", "Hemingway"
+
+end quiz
+
+run window

@@ -1,0 +1,26 @@
+# General Game Template in E++
+
+game window "My Game"
+
+# Create player-controlled object
+create object rect as player at 400 300 size 30 20
+set color player to "cyan"
+
+# Create enemies
+create object circle as enemy1 at 100 50 size 20 20
+set color enemy1 to "red"
+
+create object circle as enemy2 at 200 50 size 20 20
+set color enemy2 to "red"
+
+create object circle as enemy3 at 300 50 size 20 20
+set color enemy3 to "red"
+
+# Key bindings for player movement
+when key "Left" do move player left by 10
+when key "Right" do move player right by 10
+when key "Up" do move player up by 10
+when key "Down" do move player down by 10
+
+# Game loop - runs continuously
+game loop

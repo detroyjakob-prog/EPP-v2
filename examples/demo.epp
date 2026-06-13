@@ -1,0 +1,51 @@
+# Complete E++ Examples
+
+# Print and Variables
+say "E++ Language Demo"
+say "=================="
+
+let greeting be "Hello"
+let name be "World"
+say greeting + ", " + name + "!"
+
+# Math operations
+let a be 10
+let b be 5
+let sum be a + b
+let diff be a - b
+let prod be a * b
+let quot be a / b
+
+say "Sum: " + sum
+say "Difference: " + diff
+say "Product: " + prod
+say "Quotient: " + quot
+
+# Conditions
+let score be 85
+
+if score is 85
+    say "Score is exactly 85"
+end if
+
+if score is not 100
+    say "Score is not perfect"
+end if
+
+if score greater than 70
+    say "Passing grade"
+end if
+
+if score less than 90
+    say "Not an A grade"
+end if
+
+# Loops
+say "Counting..."
+repeat 3 times
+    say "Count"
+end repeat
+
+# Input example (uncomment to test)
+ask "Enter your name?" as username
+say "Hello, " + username

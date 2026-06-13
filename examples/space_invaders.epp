@@ -1,0 +1,13 @@
+# Space Invaders-style Game in E++
+
+game window "Space Invaders E++"
+
+create player as ship at 300 350
+
+create enemy as alien1 at 100 50
+create enemy as alien2 at 200 50
+create enemy as alien3 at 300 50
+create enemy as alien4 at 400 50
+create enemy as alien5 at 500 50
+
+game loop
